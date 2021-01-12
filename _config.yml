@@ -2,8 +2,8 @@
 # Site
 
 title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
-baseurl:
+url: "https://TableUV.github.io"
+baseurl: "/"
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
@@ -23,7 +23,7 @@ social:
 # -----
 # Build
 
-timezone: Etc/UTC
+# timezone: Etc/UTC
 
 collections:
   staff_members:
