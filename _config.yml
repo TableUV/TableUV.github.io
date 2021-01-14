@@ -1,7 +1,9 @@
 # ----
 # Site
 
-title: Hydra Template
+title: TableUV
+# url:
+# baseurl:
 url: "https://tableuv.github.io"
 baseurl: "/"
 google_analytics_key:
@@ -16,9 +18,9 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Hydra Template
+  name: TableUV
   links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
+    - https://github.com/orgs/TableUV/teams
 
 # -----
 # Build

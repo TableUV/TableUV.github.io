@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 760 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-839.938,0)">
+        <g id="Artboard1a" transform="matrix(1.00823,0,0,0.856553,808.054,-63.9413)">
+            <rect x="31.624" y="74.65" width="753.796" height="560.386" style="fill:none;"/>
+            <g transform="matrix(0.991837,0,0,1.16747,2.86496,-104.721)">
+                <path d="M581.29,200L581.29,235L90,235L90,565L710,565L710,289.691L750,289.691L750,600L50,600L50,200L581.29,200Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.991837,0,0,1.16747,90.0442,-59.5762)">
+                <text x="519.404px" y="222.229px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:110px;fill:white;">UV</text>
+            </g>
+            <g transform="matrix(0.991837,0,0,1.16747,-198.147,94.6607)">
+                <text x="312.106px" y="306.67px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:220px;fill:white;">T<tspan x="422.106px 544.46px " y="306.67px 306.67px ">ab</tspan>le</text>
+            </g>
+            <g transform="matrix(1.38084,0,0,1.57816,472.691,-356.005)">
+                <ellipse cx="138.561" cy="546.506" rx="17.957" ry="18.494" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>

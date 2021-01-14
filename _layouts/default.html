@@ -1,5 +1,5 @@
 <!doctype html>
-
+<!-- Content -->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -22,16 +22,18 @@
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="Hydra Logo" width="95" height="33" /></a></div>
-				{% include navigation.html %}
+			<div id="navbar">
+				<div class="container">
+					<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-rect.svg" alt="TableUV Logo" width="100" height="50" /></a></div>
+					{% include navigation.html %}
+				</div>
 			</div>
 		</header>
 		{{ content }}
 		<footer>
 			<div class="container">
 				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
-				<div class="footer-columns">
+				<div class="footer-rows">
 					{% for column in site.data.footer %}
 					<ul class="footer-links">
 						{% for link in column.links %}
@@ -44,7 +46,9 @@
 					</ul>
 					{% endfor %}
 				</div>
-				<p class="copyright">&copy; {{ site.time | date: '%Y' }} MyApp Ltd. • <a href="#">Terms</a> &amp; <a href="#">Privacy</a> • <a href="https://cloudcannon.com/">Template by CloudCannon</a></p>
+				<p class="copyright">&copy; {{ site.time | date: '%Y' }} TableUV Ltd. - Designed by 
+					<a href="https://github.com/orgs/TableUV/teams/table-robotics" target="_blank"> Table Robotics</a> @ 
+					<a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a> </p>
 			</div>
 		</footer>
 		<script>
