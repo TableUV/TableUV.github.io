@@ -1,5 +1,5 @@
 <!doctype html>
-
+<!-- Content -->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -22,9 +22,11 @@
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="Hydra Logo" width="95" height="33" /></a></div>
-				{% include navigation.html %}
+			<div id="navbar">
+				<div class="container">
+					<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-rect.svg" alt="TableUV Logo" width="100" height="50" /></a></div>
+					{% include navigation.html %}
+				</div>
 			</div>
 		</header>
 		{{ content }}
