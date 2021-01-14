@@ -2,10 +2,10 @@
 # Site
 
 title: TableUV
-url:
-baseurl:
-# url: "https://tableuv.github.io"
-# baseurl: "/"
+# url:
+# baseurl:
+url: "https://tableuv.github.io"
+baseurl: "/"
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
