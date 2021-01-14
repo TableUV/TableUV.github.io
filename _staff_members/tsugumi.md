@@ -1,6 +1,6 @@
 ---
 name: Tsugumi Murata
-position: Software Engineer
+position: Electical Engineer
 image_path: /images/tsugumi.jpg
-blurb: Dong Jae likes to listen to music.
+blurb: (Need a blob)
 ---

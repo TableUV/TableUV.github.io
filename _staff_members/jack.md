@@ -1,6 +1,6 @@
 ---
 name: Jack Xu
-position: Software Engineer
-image_path: /images/alex.jpg
-blurb: Dong Jae likes to listen to music.
+position: Mechanical, Electrical, Software Engineer
+image_path: /images/jack.png
+blurb: (Need a blob)
 ---

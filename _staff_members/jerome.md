@@ -1,6 +1,6 @@
 ---
 name: Jerome Villapando
-position: Software Engineer
+position: Electrical Engineer
 image_path: /images/alex.jpg
-blurb: Dong Jae likes to listen to music.
+blurb: (Need a blob)
 ---
