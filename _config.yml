@@ -9,7 +9,7 @@ baseurl: "/"
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
+logo: /logo-circle.svg 
 description: Product marketing template for Jekyll.
 author:
   name:
