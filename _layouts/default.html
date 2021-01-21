@@ -1,4 +1,6 @@
 <!doctype html>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.css">
 <!-- Content -->
 <html lang="en">
 	<head>
@@ -46,9 +48,12 @@
 					</ul>
 					{% endfor %}
 				</div>
-				<p class="copyright">&copy; {{ site.time | date: '%Y' }} TableUV Ltd. - Designed by 
-					<a href="https://github.com/orgs/TableUV/teams/table-robotics" target="_blank"> Table Robotics</a> @ 
-					<a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a> </p>
+				<div class="footer-ending">
+					<p class="copyright">&copy; {{ site.time | date: '%Y' }} TableUV - Designed by 
+						<a href="https://github.com/orgs/TableUV/teams/table-robotics" target="_blank"> Table Robotics</a> @ 
+						<a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a> 
+					</p>
+				</div>
 			</div>
 		</footer>
 		<script>

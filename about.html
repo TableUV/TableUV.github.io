@@ -11,6 +11,16 @@ description: >-
 			<div class="square-image"><img src="{{ person.image_path }}" alt="{{ person.name }}"/></div>
 			<div class="name">{{ person.name }}</div>
 			<div class="position">{{ person.position }}</div>
+			<div class="blurb">"{{ person.blurb }}"</div>
+			<div class="social">
+				{% for link in person.links %}
+					<a target="_blank" href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+						{% if link.social_icon %}
+							{% include social-icon.html icon=link.social_icon %}
+						{% endif %}
+					</a>
+				{% endfor %}
+			</div>
 		</li>
 	{% endfor %}
 </ul>

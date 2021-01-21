@@ -1,178 +1,122 @@
 ---
 title: Contact
 heading: Get in touch today
-description: We'd love to help you improve your sales.
-
-map:
-  latitude: -45.8787605
-  longitude: 170.5027976
-  address: "1 George Street, Dunedin, New Zealand"
-  zoom: 13
+description: We'd love to help you make your space clean and safe.
 ---
-<div class="map" id="map"></div>
-
-
 <div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
-		<input type="hidden" name="_to" value="support@example.com" />
-		<input type="text" name="_gotcha" style="display: none;">
+	<div id="ThanksMessage" class="msg-block">
+		Message Received! Thanks for emailing us! We will contact you ASAP. :D
+	</div>
+	<div id="ERRORMessage" class="msg-block">
+		: C Ooops, something is wrong, failed to send message, please try it again later.
+	</div>
 
-		<label for="name">Full Name</label>
-		<input type="text" name="name" id="name" placeholder="Enter your name..." />
+	<div id="contact-form">
+		<form method="POST" id="gform" class="form-contact" action="https://script.google.com/macros/s/AKfycbzqklYlVuTdyAvXhLbI-SBo4D4yutrREcrbJaMqOxfqS3zq-YojcZTC/exec">
+			<div class="col-md-6" id="plp-label">
+				<input id="input-name " type="text" name="name" placeholder="Your Name*" required="" data-error="Name is required." class="input-block input-md" value="">
+			</div>
+			<div class="col-md-6" id="company-label">
+				<input id="input-company" type="company" name="companyName" placeholder="Your Company" class="input-block input-md" value="">
+			</div>
+			<div class="col-md-6" id="email-label">
+				<input id="input-email" type="email" name="email"  placeholder="Your Email*" required="" data-error="Email is required." class="input-block input-md " value="">
+			</div>
+			<div class="col-md-6" id="tel-label">
+				<input id="input-phone"  type="tel" name="phone"  placeholder="Your Phone" class="input-block input-md" value="">
+			</div>
 
-		<label for="email">Email Address</label>
-		<input type="email" name="email" id="email" placeholder="Enter your email..." required />
+			<div class="col-md-12">
+				<textarea id="input-message" placeholder="MESSAGE for me*" name="message" required="" data-error="Please,leave a message." class="input-md" value=""></textarea>
+			</div>
 
-		<label for="message">Message</label>
-		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
-
-		<input type="submit" value="Send Message" />
-	</form>
-
-	<div class="contact-details">
-		<h3 class="editable">Address</h3>
-		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
-
-		<h3 class="editable">Email</h3>
-		<p><a href="mailto:support@example.com">support@example.com</a></p>
+			<div class="col-md-6">
+				<div id="send-result"></div>
+			</div>
+			<div class="col-md-6">
+				<button id="submit-message" type="submit" class="btn-sem" value="Send">Send message</button>
+			</div>
+		</form>
 	</div>
 </div>
 
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
-	window.mapData = {{ page.map | jsonify }};
+	/*----------------------------------------------------*/
+	/* Hidden greeting messages
+	------------------------------------------------------ */
+	$("#ThanksMessage").hide();
+	$("#ERRORMessage").hide();
 
-	function initMap() {
-		var myOptions = {
-			scrollwheel: false,
-			draggable: false,
-			panControl: false,
-			disableDefaultUI: true,
-			styles: [{
-				"featureType": "all",
-				"elementType": "labels.text.fill",
-				"stylers": [{
-					"saturation": 36
-				}, {
-					"color": "#000000"
-				}, {
-					"lightness": 40
-				}]
-			}, {
-				"featureType": "all",
-				"elementType": "labels.text.stroke",
-				"stylers": [{
-					"visibility": "on"
-				}, {
-					"color": "#000000"
-				}, {
-					"lightness": 16
-				}]
-			}, {
-				"featureType": "all",
-				"elementType": "labels.icon",
-				"stylers": [{
-					"visibility": "off"
-				}]
-			}, {
-				"featureType": "administrative",
-				"elementType": "geometry.fill",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 20
-				}]
-			}, {
-				"featureType": "administrative",
-				"elementType": "geometry.stroke",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 17
-				}, {
-					"weight": 1.2
-				}]
-			}, {
-				"featureType": "landscape",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 20
-				}]
-			}, {
-				"featureType": "poi",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 21
-				}]
-			}, {
-				"featureType": "road.highway",
-				"elementType": "geometry.fill",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 17
-				}]
-			}, {
-				"featureType": "road.highway",
-				"elementType": "geometry.stroke",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 29
-				}, {
-					"weight": 0.2
-				}]
-			}, {
-				"featureType": "road.arterial",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 18
-				}]
-			}, {
-				"featureType": "road.local",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 16
-				}]
-			}, {
-				"featureType": "transit",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 19
-				}]
-			}, {
-				"featureType": "water",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 17
-				}]
-			}],
-			zoom: window.mapData.zoom,
-			maxZoom: window.mapData.zoom,
-			minZoom: window.mapData.zoom,
-			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		map = new google.maps.Map(document.getElementById("map"), myOptions);
-		marker = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
+	/*----------------------------------------------------*/
+	/* Google Form Server Hosts
+	------------------------------------------------------ */
+
+	// Variable to hold request
+	var request;
+
+	// Bind to the submit event of our form
+	$("#gform").submit(function(event){
+
+		// Prevent default posting of form - put here to work in case of errors
+		event.preventDefault();
+
+		// Abort any pending request
+		if (request) {
+			request.abort();
+		}
+		// setup some local variables
+		var $form = $(this);
+
+		// Let's select and cache all the fields
+		var $inputs = $form.find("input, select, button, textarea");
+
+		// Serialize the data in the form
+		var serializedData = $form.serialize();
+
+		// Note: we disable elements AFTER the form data has been serialized.
+		$inputs.prop("disabled", true);
+
+		// Fire off THE DATA TO THE GOOGLE FORM
+		request = $.ajax({
+			url: "https://script.google.com/macros/s/AKfycbzqklYlVuTdyAvXhLbI-SBo4D4yutrREcrbJaMqOxfqS3zq-YojcZTC/exec",
+			type: "post",
+			data: serializedData
 		});
 
-		google.maps.event.addDomListener(window, "resize", function () {
-			map.setCenter(myOptions.center);
+		// HANDLER - SUCCESS
+		request.done(function (response, textStatus, jqXHR){
+			// Log a message to the console
+			$("#ThanksMessage").slideDown();
+			setTimeout(function() {
+				$("#ThanksMessage").slideUp();
+			}, 5000);
+			//clear text after 2s
+			setTimeout( function() {$('#contact-form input').val('');
+				$('#contact-form textarea').val('');},2000);
 		});
-	}
+
+		// HANDLER - FAILURE
+		request.fail(function (jqXHR, textStatus, errorThrown){
+			// Log the error to the console
+			console.error(
+				"The following error occurred: "+
+				textStatus, errorThrown
+			);
+
+			$("#ERRORMessage").slideDown();
+			setTimeout(function() {
+				$("#ERRORMessage").slideUp();
+			}, 5000);
+		});
+
+		// Callback handler that will be called regardless
+		// if the request failed or succeeded
+		request.always(function () {
+			// Re-enable the inputs
+			$inputs.prop("disabled", false);
+		});
+
+	});
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
+
