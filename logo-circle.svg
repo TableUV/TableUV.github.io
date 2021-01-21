@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-839.938,-1050)">
+        <g id="Artboard3a" transform="matrix(1.00195,0,0,1.07708,839.938,-81.8149)">
+            <rect x="0" y="1050.82" width="598.833" height="557.064" style="fill:none;"/>
+            <g transform="matrix(1.23989,0,0,1.21526,39.9222,466.073)">
+                <g transform="matrix(0.804956,0,0,0.763984,0,121.335)">
+                    <path d="M478.858,650.146C498.7,685.974 510,727.178 510,771C510,908.979 397.979,1021 260,1021C122.021,1021 10,908.979 10,771C10,633.021 122.021,521 260,521C282.518,521 304.345,523.984 325.103,529.576L310.758,577.509C294.555,573.263 277.54,571 260,571C149.617,571 60,660.617 60,771C60,881.383 149.617,971 260,971C370.383,971 460,881.383 460,771C460,735.468 450.714,702.087 434.434,673.147L478.858,650.146Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(0.804956,0,0,0.763984,-112.861,554.826)">
+                    <text x="312.106px" y="306.67px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:288px;fill:white;">T</text>
+                </g>
+                <g transform="matrix(0.804956,0,0,0.763984,-149.227,435.367)">
+                    <text x="519.404px" y="222.229px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:110px;fill:white;">UV</text>
+                </g>
+                <g transform="matrix(1.12066,0,0,1.03274,119.945,205.62)">
+                    <ellipse cx="138.561" cy="546.506" rx="17.957" ry="18.494" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
