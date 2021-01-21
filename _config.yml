@@ -2,10 +2,10 @@
 # Site
 
 title: TableUV
-url:
-baseurl:
-# url: "https://tableuv.github.io"
-# baseurl: "/"
+# url:
+# baseurl:
+url: "https://tableuv.github.io"
+baseurl: "/"
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
