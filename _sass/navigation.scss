@@ -1,7 +1,16 @@
 .nav-open nav {
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
 	padding: 10px 0;
+	#open-nav{
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+
 	a {
+		margin: 5px 10px;
 		display: block;
 	}
 
@@ -21,7 +30,7 @@ nav {
 	width: 100%;
 	transition: all .5s ease;
 	margin: 0px;
-	top: 0px;
+	top: 15px;
 	border-bottom: none;
 	letter-spacing: 1.2px;
 
@@ -30,7 +39,8 @@ nav {
 		width: 40px;
 		height: 40px;
 		padding: 0px;
-		margin-right: 20px;
+		margin-right: 40px;
+		margin-top: 10px;
 	}
 
 	@media #{$mid-point} {
@@ -43,7 +53,7 @@ nav {
 
 
 	a {
-		margin: 0 3px;
+		margin: 0px 10px;
 		padding: 20px 10px;
 		border-bottom: 1px solid rgba(255,255,255,0);
 		color: rgba(255,255,255,.8);
@@ -76,8 +86,8 @@ nav {
 
 	a:hover {
 		background-color: rgba(255, 255, 255, 0.2);
-		animation: all 1s ease;
 		color: #fff;
+		padding-bottom: 25px;
 	}
 
 	@media #{$mid-point} {
@@ -91,13 +101,14 @@ nav {
 			}
 		}
 	}
-
+	
 	a.active {
-		color: #fff;
+		color: black;
+		background: #fff;
+		padding-bottom: 25px;
 	}
-
 }
-
+	
 #navbar {
 	background-color: #4182e4;
 	z-index: 1;

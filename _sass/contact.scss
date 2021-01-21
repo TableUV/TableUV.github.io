@@ -10,6 +10,10 @@
 	max-width: 750px;
 	margin: 0 auto;
 
+	align-content: center;
+	width: 100%;
+	text-align: center;
+
 	form {
 		width: 100%
 	}
@@ -28,5 +32,251 @@
 
 	.contact-details {
 		font-size: .9em;
+	}
+
+	// Custom
+	/* ==============================
+	-  checkbox
+	============================== */
+	input[id*='checkbox'] {
+		position: absolute;
+		opacity: 0;
+	}
+	input[id*='checkbox'] + label {
+		position: relative;
+		cursor: pointer;
+		padding: 0;
+	}
+	input[id*='checkbox'] + label:before {
+		content: "";
+		margin-right: 10px;
+		display: inline-block;
+		vertical-align: text-top;
+		width: 20px;
+		height: 20px;
+		background: whitesmoke;
+	}
+	input[id*='checkbox']:hover + label:before {
+		background: #f35429;
+	}
+	input[id*='checkbox']:focus + label:before {
+		box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+	}
+	input[id*='checkbox']:checked + label:before {
+		background: dimgrey;
+	}
+	input[id*='checkbox']:disabled + label {
+		color: #b8b8b8;
+		cursor: auto;
+	}
+	input[id*='checkbox']:disabled + label:before {
+		box-shadow: none;
+		background: whitesmoke;
+	}
+	input[id*='checkbox']:checked + label:after {
+		content: "";
+		position: absolute;
+		left: 5px;
+		top: 9px;
+		background: whitesmoke;
+		width: 2px;
+		height: 2px;
+		box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	/* ==============================
+	-  Contact Form Section
+	============================== */
+	.form-contact div {
+		position: relative;
+		min-height: 1px;
+		display: block;
+	}
+	.form-contact input,
+	.form-contact select {
+		margin-top:20px;
+		display: inline-block;
+		height: 40px;
+		vertical-align: middle;
+		font-size: 11px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #777;
+		border: 1px solid transparent;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		padding-left: 7px;
+		padding-right: 7px;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+	.form-contact select {
+		font-size: 12px;
+	}
+	.form-contact select[multiple] {
+		height: auto;
+	}
+	.form-contact input:hover,
+	.form-contact select:hover {
+		border-color: rgba(0,0,0,0.5);
+	}
+	.form-contact input:focus,
+	.form-contact select:focus {
+		color: #111;
+		border-color: rgba(0,0,0,0.7);
+		-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		outline: none;
+	}
+	.form-contact input.input-lg,
+	.form-contact select.input-lg {
+		height: 46px;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 13px;
+	}
+	.form-contact input.input-md,
+	.form-contact select.input-md {
+		height: 37px;
+		padding-left: 28px;
+		padding-right: 13px;
+		font-size: 12px;
+	}
+	.form-contact input.input-sm,
+	.form-contact select.input-md {
+		height: 31px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.form-contact textarea {
+		margin-top: 20px;
+		font-size: 12px;
+		font-weight: 400;
+		height: 90px;
+		width: 100%;
+		padding-left: 13px;
+		padding-top: 10px;
+		padding-right: 13px;
+		letter-spacing: 1px;
+		color: #777;
+		border-color: rgba(0,0,0,0.1);
+		outline: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+	.form-contact textarea:hover {
+		border-color: rgba(0,0,0,0.5);
+	}
+	.form-contact textarea:focus {
+		color: #111;
+		border-color: rgba(0,0,0,0.7);
+		-webkit-box-shadow: 0 0 5px rgba(21,21,21,0.3);
+		box-shadow: 0 0 5px rgba(21,21,21,0.3);
+	}
+	.input-block{
+		width: 100%;
+	}
+	#ThanksMessage{
+		background-color: green;
+	}
+	#ERRORMessage{
+		background-color: red;
+	}
+	.msg-block{
+		color: white;
+		width: 100%;
+		padding: 5px;
+		margin-top: 10px;
+		align-content: center;
+		vertical-align: middle;
+	}
+	.col-md-6,.col-md-12 {
+		float: left;
+	}
+	.col-md-6 {
+		width: 45%;
+
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.col-md-12 {
+		width: 100%;
+	}
+	.btn-sem{
+		margin: 20px 0;
+		padding: 8px 50px;
+		float: right;
+		border: 0px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 13px;
+		display: inline-block;
+		background-color: #4d4d4d;
+		color: white;
+		-webkit-transition: width 1.3s; /* Safari */
+		transition: width 1.3s;
+	}
+	.btn-sem:hover{
+		cursor: pointer;
+		background-color: #373737;
+		color:  #e6e6e6;
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	#plp-label:before {
+		color: #666;
+		content:"\f007";
+		font-family: FontAwesome, serif;
+		position: absolute;
+		top: 29px;
+		left: 25px;
+	}
+	#company-label:before{
+		color: #666;
+		content: "\f0f7";
+		font-family: FontAwesome, serif;
+		position: absolute;
+		top: 29px;
+		left: 25px;
+	}
+	#email-label:before{
+		color: #666;
+		content: "\f003";
+		font-family: FontAwesome, serif;
+		position: absolute;
+		top: 29px;
+		left: 23px;
+	}
+	#tel-label:before{
+		color: #666;
+		content: "\f095";
+		font-family: FontAwesome, serif;
+		position: absolute;
+		top: 29px;
+		left: 25px;
+	}
+	
+	
+	/* ==============================
+	-  Header Animations
+	============================== */
+	.header-anim:after{
+		display:block;
+		height:4px;
+		background-color: #80ced6;
+		content:" ";
+		width:100px;
+		margin:0 auto;
+		margin-top:5px;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: width 1.3s; /* Safari */
+		transition: width 1.3s;
+	}
+	.header-anim:hover:after{
+		width:200px;
 	}
 }

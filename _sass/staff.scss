@@ -4,17 +4,20 @@
 	@extend %flexbox;
 	@include flex-flow(wrap);
 	text-align: center;
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
 	li {
 		padding: 30px 20px;
 		box-sizing: border-box;
 		width: 100%;
 
 		@media #{$tablet} {
-			@include flex(1, 1, 45%);
+			@include flex(1, 1, 80%);
 		}
 
 		@media #{$desktop} {
-			@include flex(1, 1, 29%);
+			@include flex(1, 1, 45%);
 		}
 
 	}
@@ -34,5 +37,21 @@
 
 	.position {
 		color: #666;
+	}
+
+	.social {
+		margin-top: 10px;
+	}
+	.social a{
+		text-decoration: none;
+	}
+	.social a:hover svg{
+		text-decoration: none;
+		fill: gray;
+	}
+	.blurb{
+		margin-top: 5px;
+		font-size: small;
+		color: gray;
 	}
 }

@@ -13,7 +13,7 @@
 
 	&.max-container {
 		max-width: 100%;
-		padding: 0;
+		padding: 10px;
 	}
 }
 
@@ -40,7 +40,7 @@ header {
 		line-height: 0;
 		width: auto;
 		height: 50px;
-		padding-left: 10px;
+		padding-left: 20px;
 		padding-right: 10px;
 
 		a {
@@ -54,10 +54,19 @@ header {
 	}
 }
 
+#view-area{
+	height: calc(100vh - 40px);
+    overflow-x: hidden;
+	-webkit-transition:  width 0.4s ease-in-out;
+	-moz-transition:  width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
 .content {
 	background: #fff;
 	padding: 1px 0 0 0;
 	position: relative;
+    overflow-x: hidden;
 }
 
 .screenshot{
@@ -152,15 +161,16 @@ blockquote:before {
 }
 
 .editor-link {
- 	display: none;
+ 	display: block;
 	margin-top: 0;
 	.btn {
+		position: absolute;
 		border: 0;
 		border-radius: 2px;
 		width: 100%;
 		max-width: 500px;
 		box-sizing: border-box;
-		font-size: 2rem;
+		font-size: 2rem !important;
 		text-decoration: none;
 		padding: 10px 15px;
 		margin: 0;

@@ -79,11 +79,44 @@ footer {
 	position: relative;
 	background: #2b2b40;
 	color: #fff;
+	letter-spacing: 1pt;
+
+	.footer-ending{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.footer-ending p{
+		font-size: small; 
+		// margin-top: 70px;
+		margin-bottom: 30px;
+		// color: white;
+		display: flex;
+		flex-direction: row;
+		-webkit-animation: fadeIn .7s both ease;
+		-moz-animation: fadeIn .7s both ease;
+		animation: fadeIn .7s both ease;
+	}
+	.footer-ending p:before, .footer-ending p:after {
+		content: "";
+		flex: 1 1;
+		border-bottom: 1px solid gray;
+		margin: auto;
+	}
+	.footer-ending p:before{
+		margin-right: 5%
+	}
+	.footer-ending p:after {
+		margin-left: 5%
+	}
 
 	.copyright {
 		font-size: .8em;
 		margin: 0 auto;
 		text-align: center;
+	}
+
+	.copyright a{
+		letter-spacing: 0.5pt;
 	}
 	
 	&,

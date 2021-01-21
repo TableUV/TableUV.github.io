@@ -6,8 +6,6 @@ title: TableUV
 # baseurl:
 url: "https://tableuv.github.io"
 baseurl: "/"
-google_analytics_key:
-google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
