@@ -217,16 +217,18 @@
 	.col-md-12 {
 		margin: 15px;
 		width: 90%;
+		overflow:auto;
 	}
 	.btn-sem{
-		margin: 20px 0;
+		margin: 20px auto;
+		margin-right: 0px;
 		padding: 8px 50px;
 		float: right;
 		border: 0px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		font-size: 13px;
-		display: inline-block;
+		display: block;
 		background-color: #4d4d4d;
 		color: white;
 		-webkit-transition: width 1.3s; /* Safari */
