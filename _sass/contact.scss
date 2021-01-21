@@ -22,12 +22,13 @@
 		margin: 0;
 	}
 
-	.contact-form, .contact-details  {
+	#contact-form, .contact-details  {
+		align-content: center;
 		@media #{$desktop} {
 			-webkit-flex: 1;
 			flex: 1;
 		}
-		margin: 0 30px;
+		margin: auto;
 	}
 
 	.contact-details {
@@ -89,10 +90,16 @@
 	/* ==============================
 	-  Contact Form Section
 	============================== */
+	.form-contact {
+		margin: auto;
+		@media #{$tablet} {
+			padding-left:2%;
+		}
+	}
 	.form-contact div {
 		position: relative;
 		min-height: 1px;
-		display: block;
+		display: flex;
 	}
 	.form-contact input,
 	.form-contact select {
@@ -196,15 +203,20 @@
 	}
 	.col-md-6,.col-md-12 {
 		float: left;
+		// display: inline-block;
 	}
 	.col-md-6 {
-		width: 45%;
-
+		width: calc(45% - 15px);
 		padding-right: 15px;
 		padding-left: 15px;
+		margin: auto;
+		@media #{$mobile} {
+			width: 90%;
+		}
 	}
 	.col-md-12 {
-		width: 100%;
+		margin: 15px;
+		width: 90%;
 	}
 	.btn-sem{
 		margin: 20px 0;
