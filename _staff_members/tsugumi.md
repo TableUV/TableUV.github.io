@@ -1,8 +1,8 @@
 ---
 name: Tsugumi Murata
-position: Electical Engineer
+position: Electrical Engineer
 image_path: /images/tsugumi.jpg
-blurb: 私は寿司が好きです
+blurb: I like sushi
 links:
   - link: https://github.com/tsugumi0401
     social_icon: Github
