@@ -32,13 +32,13 @@ The electrical team worked on the component selection, architecrture design, mod
 
 Below are the 3D images of the PCB designs. 
 
-![MCU Board](/images/blog/post1/mcu_board)
-![Power & Driver Board](/images/blog/post1/driver_board)
-![Battery Charger Board](/images/blog/post1/charger_board)
-![ToF Sensor Board](/images/blog/post1/tof_board)
-![IR Sensor Board](/images/blog/post1/ir_board)
-![Collision Sensor Board](/images/blog/post1/collision_board)
-![UV Sensor Array Board](/images/blog/post1/uv_array_board)
+![MCU Board](/images/blog/post1/mcu_board.png)
+![Power & Driver Board](/images/blog/post1/driver_board.png)
+![Battery Charger Board](/images/blog/post1/charger_board.png)
+![ToF Sensor Board](/images/blog/post1/tof_board.png)
+![IR Sensor Board](/images/blog/post1/ir_board.png)
+![Collision Sensor Board](/images/blog/post1/collision_board.png)
+![UV Sensor Array Board](/images/blog/post1/uv_array_board.png)
 
 
 #### What's next?
