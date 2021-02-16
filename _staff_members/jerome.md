@@ -1,7 +1,11 @@
 ---
 name: Jerome Villapando
 position: Electrical Engineer
-social: Github
 image_path: /images/jerome.jpg
-blurb: (Need a blob)
+blurb: Wassup!
+links:
+  - link: https://github.com/jeromeocode
+    social_icon: Github
+  - link: https://www.linkedin.com/in/jeromevillapando/
+    social_icon: LinkedIn
 ---

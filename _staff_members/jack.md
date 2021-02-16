@@ -2,7 +2,7 @@
 name: Jack Xu
 position: Robotics Engineer
 image_path: /images/jack.png
-blurb: Jack is probly daydreaming rn.
+blurb: Jack is always building cool robots.
 links:
   - link: https://github.com/JXproject
     social_icon: Github
