@@ -3,7 +3,7 @@ title: Summary of the developments of 2020
 categories: 
     -  General
 author_staff_member: tsugumi
-date: 2021-02-15 # needs to be a valid date (present or a past date)
+date: 2021-01-11 # needs to be a valid date (present or a past date)
 ---
 <!-- Don't use Heading 1 -->
 
