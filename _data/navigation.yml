@@ -2,8 +2,8 @@
   link: /
   new_window: false
   highlight: false
-- name: About
-  link: /about/
+- name: About Us
+  link: /about_us/
   new_window: false
   highlight: false
 # - name: Pricing
