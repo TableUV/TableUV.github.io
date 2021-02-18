@@ -15,7 +15,6 @@ After resolving hardware issues encountered, the robot is finally put into a sin
 Robot powered up!
 
 <img src="/images/blog/post3/robot2.jpg" alt="Robot Power On" style="width:100%!important height:100%!important;"/>
-"/images/blog/post1/collision_board.png"
 
 UV modulation test code implemented on the ESP32. 
 
