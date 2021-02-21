@@ -18,14 +18,14 @@ Feel free to leave a comment below with any questions!!
 
 ### Architecture Design
 **Member** Jack
-<img src="/images/blog/post1/soft-arch.png" alt="Software Architecture" style="width:100%!important;height:100%!important;"/>
-<img src="/images/blog/post1/hardware-arch.png" alt="Hardware Architecture" style="width:100%!important;height:100%!important;"/>
+<img src="/images/blog/post1/soft-arch.png" alt="Software Architecture" class="landscape"/>
+<img src="/images/blog/post1/hardware-arch.png" alt="Hardware Architecture" class="landscape"/>
 
 ### Mechanical
 **Member** jack
 
-<img src="/images/blog/post1/mech_p2.png" alt="Mechanical P2" style="width:40%!important;height:40%!important;"/>
-<img src="/images/blog/post1/mech_p1.png" alt="Mechanical P1" style="width:40%!important;height:40%!important;"/>
+<img src="/images/blog/post1/mech_p2.png" alt="Mechanical P2" class="portrait"/>
+<img src="/images/blog/post1/mech_p1.png" alt="Mechanical P1" class="portrait"/>
 
 #### Summary
 Prototype  V2.3.27 [327 Iterations]
@@ -43,13 +43,13 @@ The electrical team worked on the component selection, architecrture design, mod
 
 Below are the 3D images of the PCB designs. 
 
-<img src="/images/blog/post1/mcu_board.png" alt="MCU Board" style="width:40%!important;height:40%!important;"/>
-<img src="/images/blog/post1/driver_board.png" alt="Power & Driver Board" style="width:40%!important;height:40%!important;"/>
-<img src="/images/blog/post1/charger_board.png" alt="Battery Charger Board" style="width:30%!important;height:30%!important;"/>
-<img src="/images/blog/post1/tof_board.png" alt="ToF Sensor Board" style="width:30%!important;height:30%!important;"/>
-<img src="/images/blog/post1/ir_board.png" alt="IR Sensor Board" style="width:30%!important;height:30%!important;"/>
-<img src="/images/blog/post1/collision_board.png" alt="Collision Sensor Board" style="width:30%!important;height:30%!important;"/>
-<img src="/images/blog/post1/uv_array_board.png" alt="UV Sensor Array Board" style="width:50%!important;height:50%!important;"/>
+<img src="/images/blog/post1/mcu_board.png" alt="MCU Board" class="small"/>
+<img src="/images/blog/post1/driver_board.png" alt="Power & Driver Board" class="small"/>
+<img src="/images/blog/post1/charger_board.png" alt="Battery Charger Board" class="small"/>
+<img src="/images/blog/post1/tof_board.png" alt="ToF Sensor Board" class="small"/>
+<img src="/images/blog/post1/ir_board.png" alt="IR Sensor Board" class="small"/>
+<img src="/images/blog/post1/collision_board.png" alt="Collision Sensor Board" class="small"/>
+<img src="/images/blog/post1/uv_array_board.png" alt="UV Sensor Array Board" class="small"/>
 
 
 #### What's next?
