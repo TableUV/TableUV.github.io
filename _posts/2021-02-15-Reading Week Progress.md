@@ -17,17 +17,17 @@ During reading week, we have been actively working on the project.
 ## Robot Assembly
 After six-month developments, we have finally brought our robot to real-life from the design. As the picture shown below, it is surprisingly a tiny robot.
 
-<img src="/images/blog/post2/robot_size_comparison.jpg" alt="Dev Table" style="width:100%!important;height:100%!important;"/>
+<img src="/images/blog/post2/robot_size_comparison.jpg" alt="Comparison" style="width:100%!important;height:100%!important;"/>
 
 Despite its tiny size, it is super compact with all kinds of sensors and boards. As we may see the picture below, it is filled up with all instruments and layered densely.
 
-<img src="/images/blog/post2/semi_assembled_robot.jpg" alt="Dev Table" style="width:70%!important;"/>
+<img src="/images/blog/post2/semi_assembled_robot.jpg" alt="Assembled" style="width:70%!important;"/>
 
 From the bottom view, we can see three sets of IR sensors, 14 UV disinfectious leds, and differential wheel drive system. 
 
-<img src="/images/blog/post2/base_plate.jpg" alt="Dev Table" style="width:70%!important;"/>
+<img src="/images/blog/post2/base_plate.jpg" alt="Base" style="width:70%!important;"/>
 
 Woohoo, the uv light is now activated and ready for battling the virus!
 
-<img src="/images/blog/post2/uv_activation.jpg" alt="Dev Table" style="width:100%!important;height:100%!important;"/>
+<img src="/images/blog/post2/uv_activation.jpg" alt="UV" style="width:100%!important;height:100%!important;"/>
 
