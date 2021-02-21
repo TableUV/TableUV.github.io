@@ -29,5 +29,5 @@ From the bottom view, we can see three sets of IR sensors, 14 UV disinfectious l
 
 Woohoo, the uv light is now activated and ready for battling the virus!
 
-<img src="/images/blog/post2/uv_activation.jpg" alt="UV" style="width:100%!important;height:100%!important;"/>
+<img src="/images/blog/post2/uv_activation.jpg" alt="UV" style="width:100%!important;height:50%!important;"/>
 
