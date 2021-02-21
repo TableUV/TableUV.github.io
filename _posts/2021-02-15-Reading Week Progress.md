@@ -1,5 +1,5 @@
 ---
-title: Reading Week Progress (Summary)
+title: Reading Week Progress (Part 1/2)
 categories: 
     -  General
 author_staff_member: jack

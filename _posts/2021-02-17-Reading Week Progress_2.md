@@ -1,5 +1,5 @@
 ---
-title: Reading Week Progress_2
+title: Reading Week Progress (Part 2/2)
 categories: 
     -  General
 author_staff_member: tsugumi
