@@ -22,7 +22,7 @@ Feel free to leave a comment below with any questions!!
 <img src="/images/blog/post1/hardware-arch.png" alt="Hardware Architecture" class="landscape"/>
 
 ### Mechanical
-**Member** jack
+**Member** Jack
 
 <img src="/images/blog/post1/mech_p2.png" alt="Mechanical P2" class="portrait"/>
 <img src="/images/blog/post1/mech_p1.png" alt="Mechanical P1" class="portrait"/>
@@ -35,7 +35,7 @@ Prototype  V2.3.27 [327 Iterations]
 #### What's next?
 
 ### Electrical
-**Member** tsugumi, jerome 
+**Member** Tsugumi, Jerome 
 
 #### Summary
 
@@ -55,17 +55,35 @@ Below are the 3D images of the PCB designs.
 #### What's next?
 The electrical team will be manufacturing the boards manually using hot plate and hand soldering once the compoenents and PCBs arrive. The boards will be tested on bench, and after any possible bugs/issues are solved, the firmware development will take in place. 
 
-
-
-
 ### Software 
-**Member** alex  
-
-
+**Member** Dong Jae
 
 #### Summary
+In terms of software, most of the work was based on creating a reliable simulation platform to test the functionality of the robot and also to serve as testing and understanding how the general high-level architecture of the robot will be organized.
+
+Within Webots, different sensors were configured on to the robot with their parameters initialized to match the sensors that we are using in our actual robot to closely imitate the robot. The following snippet shows some of these initializations as an exmaple.
+
+```
+% TOF
+TOF_FOV = 0.471;            %[rad]
+TOF_WIDTH = 64;             %[px]
+TOF_HEIGHT = 64;            %[px]
+TOF_IS_SPHERICAL = false;
+TOF_NEAR = 0.01;            %[m]
+TOF_MIN_RANGE = 0.01;       %[m]
+TOF_MAX_RANGE = 4;          %[m]
+TOF_MOTION_BLUR = 0;
+TOF_NOISE = 0;
+TOF_RESOLUTION = -1;
+```
+
+Other then sensor initialization, the main focus was using the encoder data along with the IMU to perform localization of the robot. This required determining a kinematic model of the robot and the using the data to determine the robots pose with fair amount of accuracy. The pose estimation of the robot was compared to its true values as the simulation provides actual position and orientation of the robot.
+
+<img src="/images/blog/post1/simulation_map.PNG" alt="MCU Board" class="landscape"/>
+<img src="/images/blog/post1/simulation_orientation.PNG" alt="Power & Driver Board" class="landscape"/>
 
 #### What's next?
+Simulation will require implementation SLAM (simultaenouls localization and mapping) using the ToF sensors. Using this we would generate a global map that will be used to determine the path that the robot will take in order to clean the surface. Maybe some visual feedback of which areas of the table have been covered and which have not could be good addition to the simulation. When all of these features are implemented, we can measure the time taken for the robot to clean to better optimize for performance.
 
 
 
