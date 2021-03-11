@@ -31,12 +31,13 @@
 		}
 
 	.name {
+		color: white;
 		font-size: 1.3em;
 		margin-top: 20px;
 	}
 
 	.position {
-		color: #666;
+		color: white;
 	}
 
 	.social {
@@ -47,11 +48,11 @@
 	}
 	.social a:hover svg{
 		text-decoration: none;
-		fill: gray;
+		fill: white;
 	}
 	.blurb{
 		margin-top: 5px;
 		font-size: small;
-		color: gray;
+		color: white;
 	}
 }

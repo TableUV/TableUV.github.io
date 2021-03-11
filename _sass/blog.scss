@@ -27,7 +27,7 @@
 	h3 {
 		margin: 0;
 		a {
-			color: #000;
+			color: rgb(255, 255, 255);
 			text-decoration: none;
 			font-weight: normal;
 			font-size: 1.3em;
@@ -85,6 +85,8 @@
 	}
 
 	.post-content {
+		color: rgb(255, 255, 255);
+
 		.button {
 			margin: 30px 0 0 0;
 		}
