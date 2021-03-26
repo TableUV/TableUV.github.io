@@ -7,7 +7,10 @@ author_staff_member: alex
 date: 2021-03-02 # needs to be a valid date (present or a past date)
 ---
 
-## SLAM
+In this section, we would discuss about SLAM.
+
+
+### SLAM
 SLAM is composed of:
 - Localization (EKF)
 - Feature Map Construction

@@ -1,7 +1,7 @@
 .plans {
 	@extend %flexbox;
 	@include flex-flow(wrap);
-	padding: 50px 0 30px 0;
+	padding:  10px 0 30px 0;
 
 	.plan {
 		list-style: none;

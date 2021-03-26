@@ -18,14 +18,15 @@
 }
 
 header {
-	color: #fff;
+	color: black;
 	padding: 20px 0;
-	background: $brand-color; /* Old browsers */
-	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
+	// background: $brand-color; /* Old browsers */
+	background: white;
+	// background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
 	align-content: center;
 	
 	a {
-		color: #fff;
+		color: black;
 		text-decoration: none;
 		z-index: 1;
 		position: relative;
@@ -63,17 +64,17 @@ header {
 }
 
 .content {
-	background: #727272;
+	background: white;
 	padding: 1px 0 0 0;
 	position: relative;
     overflow-x: hidden;
 
 	h2 {
-		color: rgb(255, 255, 255);
+		color: black;
 	}
 
 	p {
-		color: rgb(255, 255, 255);
+		color: black;
 	}
 }
 
@@ -89,7 +90,7 @@ header {
 }
 
 section {
-	padding: 100px 0;
+	padding:  10px 0;
 }
 
 section + section {
